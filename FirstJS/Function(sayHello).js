@@ -3,5 +3,5 @@ function sayHello(nameOfperson, age) {
 }
 
 sayHello("Sian", 23);
-sayHello("Lyn", 20);
+sayHello("Lyn", 21);
 sayHello("Jack", 32);
