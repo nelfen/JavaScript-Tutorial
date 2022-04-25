@@ -7,8 +7,6 @@ const player = {
 
 console.log(player);
 
-console.log(player.marryed);
-
 player.marryed = true;
 
 console.log(player.marryed);
