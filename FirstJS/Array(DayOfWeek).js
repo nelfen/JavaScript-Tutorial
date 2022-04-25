@@ -7,3 +7,5 @@ console.log(DayOfWeek);
 DayOfWeek[6] = "sun";
 
 console.log(DayOfWeek[6]);
+
+console.log(DayOfWeek);
