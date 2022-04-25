@@ -6,5 +6,5 @@ const player = {
 }
 
 player.sayHello("Lynn");
-player.sayHello("Sian");
+player.sayHello("Ryu");
 player.sayHello("Jake");
