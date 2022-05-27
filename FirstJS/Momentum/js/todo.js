@@ -50,8 +50,3 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo); //foreach함수는 paintToDo를 parsedToDos 배열의 요소마다 실행
  }
-
-function sexyFilter() {
-
-}
-
