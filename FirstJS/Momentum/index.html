@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Momentum App</title>
 </head>
-<body>
+<body class="basic">
     <div>
     <form class="hidden" id="login-form">
         <input required maxlength="15" type="text" placeholder="What is your name?" />
@@ -15,15 +15,16 @@
     </form>
     <h2 id="clock"></h2>
     <h1 id="greeting" class="hidden"></h1>
+    <div id="quote">
+        <span></span>
+        <div>&nbsp;</div>
+        <span></span>
+    </div>
     <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required/>
+        <input type="text" placeholder="Write a To Do and Press Enter" onfocus="this.placeholder=''" onblur="this.placeholder='Write a To Do and Press Enter'" required/>
     </form>
     <ul id="todo-list">
     </ul>
-    <div id="quote">
-        <span></span>
-        <span></span>
-    </div>
     <div id="weather">
         <span></span>
         <span></span>
