@@ -1,3 +1,66 @@
+::placeholder {
+    color: #5f5c5c;    
+}
+
+#clock {
+    font-size: 75px;
+    width: 100%; 
+    margin-top: 360px;
+    display: flex; 
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/*    display: -webkit-box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center; 
+    */
+}
+
+#greeting {
+    font-size: 40px;
+    margin-top: -65px;
+    display: flex;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#quote {
+    margin-top: -15px;
+    display: flex; 
+    justify-content: center; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#todo-form {
+    margin-top: 10px;
+    display: flex; 
+    justify-content: center;
+}
+
+#todo-form input {
+    width: 190px;
+    font-weight: bold;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5 );
+    color: black;
+    border-radius: 5px;
+}
+
+#todo-form input:focus{
+    outline: none;
+}
+
+#todo-list {
+    list-style: none;
+    float: right;
+    margin-right: 200px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 .hidden {
     display: none;
 }
