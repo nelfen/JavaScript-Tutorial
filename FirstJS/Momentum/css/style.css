@@ -54,11 +54,42 @@
     outline: none;
 }
 
+#todo {
+    position:absolute;
+    width:auto;
+    margin-right: 15px;
+    display: flex;  
+    margin: auto;
+    position: absolute;
+}
+
 #todo-list {
-    list-style: none;
-    float: right;
-    margin-right: 200px;
     font-family:Arial, Helvetica, sans-serif;
+    padding: 0;
+    position: relative;
+}
+
+#todo-list li {
+    list-style: none;
+    overflow: hidden;
+	line-height: 30px;
+    margin: 10 10px;
+}
+
+#todo-list li span {
+    float: left;
+    font-family: Georgia, "맑은 고딕", serif;
+}
+
+#todo-list li button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: right;
+    margin-right: auto;
+    background-color:transparent;
+    border: none;
+    color: red;
+    font-weight: bold;
 }
 
 .hidden {
