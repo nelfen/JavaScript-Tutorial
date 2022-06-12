@@ -6,7 +6,7 @@ const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
 function inLoginSubmit(event) {
-    event.preventDefault(); //이벤트에 대한 명시적 처리가 없을경우 기본 동작 실행 억제
+    event.preventDefault();  //Submit을 억제하여 페이지가 새로고침 되는것을 막아줌
     loginForm.classList.add(HIDDEN_CLASSNAME);
     const username = loginInput.value;  //Input에서 받은 값을 Value로 저장
     localStorage.setItem(USERNAME_KEY, username);
