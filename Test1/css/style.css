@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  font-family: "맑은 고딕";
+  color: #333333;
+}
+
+body {
+  width: 1000px;
+  height: 650px;
+  background-color: #ffffff;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  display: block; /*한줄에 하나의 요소만 나타나게 하는 코드*/
+}
+
+header {
+  float: left;
+  position: absolute;
+}
+
+.top {
+  float: left;
+  width: 200px;
+  height: 650px;
+}
+
+.logo {
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
+  width: 190px;
+  height: 50px;
+}
+
+.menu {
+  float: left;
+  top: 100px;
+  left: 10px;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+
+.navi > li {
+  float: left;
+  width: 180px;
+}
+
+.navi > li > a {
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.navi> li > a:hover {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.submenu {
+  position: absolute;
+  float: left;
+  width: 180px;
+  height: 100%;
+  left: 180px;
+  top: 0px;
+  background-color: #cccccc;
+  color: #ffffff;
+  display: none;
+  z-index: 1;
+}
+
+.submenu > li > a {
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #cccccc;
+  color: #ffffff;
+}
+
+.submenu > li > a:hover {
+  background-color: #999999;
+  color: #ffff00;
+}
+
+.imgslide {
+  float: right;
+  width: 800px;
+  height: 350px;
+  position: relative;
+}
+
+.imgslide > a {
+  display: block;
+  position: absolute;
+}
+
+.imgslide span {
+  width: 180px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  left: 40%;
+  top: 45%;
+  position: absolute;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.content {
+  float: right;
+  width: 800px;
+  height: 200px;
+}
+
+
+.notice {
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+
+.tab {
+  float: left;
+  width: 300px;
+}
+
+.notice h4 {
+  float: left;
+  height: 50px;
+  line-height: 50px;
+}
+
+.notice ul {
+  float: left;
+  width: 280px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.notice li span {
+  float: right;
+}
+
+.notice li:hover {
+  font-weight: bold;
+}
+
+.gallery {
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+
+.shortcut {
+  float: right;
+  width: 200px;
+  height: 200px;
+}
+
+footer {
+  float: right;
+}
+
+.bottom {
+  width: 800px;
+  float: right;
+}
+
+.btlogo {
+  float: left;
+  width: 200px;
+  height: 100px;
+}
+
+.copy {
+  float: left;
+  width: 400px;
+  height: 100px;
+}
+
+.familysite {
+  float: right;
+  width: 200px;
+  height: 100px;
+}
+
+
