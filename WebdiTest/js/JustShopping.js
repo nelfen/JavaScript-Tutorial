@@ -4,11 +4,19 @@ jQuery(document).ready(function(){
   }).mouseout(function(){
     $(this).find('.sub').stop().slideUp(500);
   });
+//nav>ul>li
 
-  $('.imgslide a:gt(0)').hide();
+  $('.imgslide ul.slide_all>li').eq(0).siblings().css("left", "-1200px");
+  var slideI = 0;
   setInterval(function(){
-    $('.imgslide a:first-child').fadeOut(500).next('a').fadeIn(500).end().appendTo('.imgslide');
-  }, 3000);
+    if(slideI<2){
+      slideI++;
+    }else{
+      slideI=0;
+    }    console.log(slideI);
+    $('.imgslide ul.slide_all>li').eq(slideI).siblings().animate({"left":"-1200px"}, 500);
+    $('.imgslide ul.slide_all>li').eq(slideI).animate({"left":"0"}, 500);
+  },3000);
   
   $('.notice h4').on('click', function(){
     $(this).addClass('on').next().show();
