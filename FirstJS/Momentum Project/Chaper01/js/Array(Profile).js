@@ -15,6 +15,6 @@ player.point = 15;
 
 console.log(player);
 
-player.point = player.point + 15;
+player.point += 15;
 
 console.log(player);
