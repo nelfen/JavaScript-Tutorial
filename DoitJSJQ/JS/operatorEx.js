@@ -30,11 +30,16 @@ console.log(res);
 res = h===g;  //false
 console.log(res);
 
-/* 
+/*
 논리 연산자
 ||: or연산자, 둘중 하나라도 true면 true반환
 &&: and연산자, 둘중 하나라도 false가 존재하면 false반환
 !: not연산자, 결과값이 true이면 false반환 ex) res = !(a>b);
+*/
+
+
+
+/* 
 삼항 조건 연산자
 var res=a>b?c:d;
 ?앞에 조건문이 true일 경우 c를 false일 경우 d를 반환
