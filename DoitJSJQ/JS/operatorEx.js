@@ -1,19 +1,3 @@
-//문자형 + 숫자형 데이터 = 하나의 문자형 데이터
-//ex) "100" + 200 = "100200";
-var a = 10;
-var b = 3;
-a+=b; //13
-a-=b; //10
-a*=b; //30
-a%=b; //0
-
-var str="<table border='1'>";
-str+="<tr>";
-str+="<td>1</td><td>2</td><td>3</td>";
-str+="</tr>";
-str+="</table>";
-document.write(str);
-
 /*
 b++, ++b의 차이
 var a=b++;
