@@ -1,22 +1,3 @@
-var tv = new Object();
-tv.color = "white";
-tv.price = 300000;
-tv.info = function() {
-  document.write("tv색상: " + this.color + "<br>");
-  document.write("tv가격: " + this.price + "<br>");
-}
-
-var car = {
-  color: "black",
-  price: 50000000,
-  info: function() {
-    document.write("car색상: " + this.color + "<br>");
-    document.write("car가격: " + this.price + "<br>");
-  }
-
-}
-tv.info();
-car.info();
 
 var today = new Date();
 var nowMonth = today.getMonth() + 1,
