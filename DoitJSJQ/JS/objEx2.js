@@ -1,27 +1,3 @@
-var today = new Date(); //today = 오늘 날짜
-var nowYear = today.getFullYear();
-
-var theDate = new Date(nowYear, 11, 31);
-var diffDate = theDate.getTime() - today.getTime();
-
-var result = Math.ceil(diffDate / (60 * 1000 * 60 * 24));
-document.write("연말 D-day:" + result + "일 남았습니다.<br>");
-
-var num = 2.1234;
-
-var maxNum = Math.max(10, 5, 8, 30),  //최대값
-minNum = Math.min(10, 5, 8, 30),  //최소값
-roundNum = Math.round(num), //소수점 첫째 자리 반올림
-floorNum = Math.floor(num), //소수점 첫째 자리 내림
-ceilNum = Math.ceil(num), //소수점 첫째 자리 올림
-rndNum = Math.random(), //0~1사이의 난수(실수) 발생
-piNum = Math.PI;  //원주율 상수 반환
-
-Math.random()*10; //0~10까지의 난수(실수) 반환
-Math.floor(Math.random()*11); //0부터 11까지의 난수(실수)를 발생시켜 그 값을 내림(10~3)
-Math.floor(Math.random()*31)+120; //120~150 난수 발생
-//Math.floor(Math.random()*(최댓값-최솟값+1))+최솟값;
-
 var game = prompt("가위, 바위, 보 중 선택하세요", "가위");
 var gameNum;
 switch(game) {
