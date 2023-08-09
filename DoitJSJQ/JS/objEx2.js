@@ -1,25 +1,3 @@
-var d = new Array();
-d[0] = "male";
-d[1] = 23;
-d[2] = true;
-var d = new Array("male", 23, true);
-var d = ["male", 23, true];
-
-document.write("<h3>배열값 가져오기 -1</h3>");
-document.write(d[0], "<br>");
-document.write(d[1], "<br>");
-document.write(d[2], "<br>");
-
-document.write("<h3>배열값 가져오기 -2</h3>");
-for(var i=0; i < d.length; i++) {
-  document.write(d[i], "<br>");
-} 
-
-document.write("<h3>배열값 가져오기 -3</h3>");
-for(i in d) {
-  document.write(d[i], "<br>");
-}
-
 var arr_1 = ["사당", "교대", "방배", "강남"];
 var arr_2 = ["신사", "압구정", "옥수"];
 

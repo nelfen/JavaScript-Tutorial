@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>objEx5</title>
+</head>
+<body>
+  <script>
+    var a = new Array();
+    a[0] = "male";
+    a[1] = 23;
+    a[2] = true;
+    var b = new Array("male", 23, true);
+    var c = ["male", 23, true];
+
+    document.write("<h3>배열값 가져오기 -1</h3>");
+    document.write(a[0], "<br>");
+    document.write(a[1], "<br>");
+    document.write(a[2], "<br>");
+
+    document.write("<h3>배열값 가져오기 -2</h3>");
+    for(var i=0; i < b.length; i++) {
+      document.write(b[i], "<br>");
+    } 
+
+    document.write("<h3>배열값 가져오기 -3</h3>");
+    for(i in c) {
+      document.write(c[i], "<br>");
+    }
+  </script>
+</body>
+</html>
