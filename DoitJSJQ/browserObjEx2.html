@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>browserObjEx2</title>
-</head>
-<body>
-  <script>
-    //alert("A") = 경고창
-    //prompt("A", "B") = 사용자에게 변수를 입력받을 질문창
-    //confirm("A") = 확인/취소 버튼창
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>browserObjEx2</title>
+  </head>
+  <body>
+    <button onclick="clearInterval(auto_1)">증가 정지</button>
+    <button onclick="clearInterval(auto_2)">감소 정지</button>
+    <button onclick="clearTimeout(auto_3)">정지</button>
+    <script>
+      //alert("A") = 경고창
+      //prompt("A", "B") = 사용자에게 변수를 입력받을 질문창
+      //confirm("A") = 확인/취소 버튼창
+      
     var addNum = 0;
     var subNum = 1000;
 
@@ -23,9 +26,14 @@
       subNum--;
       console.log("subNum: " + subNum);
     }, 3000);
-  </script>
 
-  <button onclick="clearInterval(auto_1)">증가 정지</button>
-  <button onclick="clearInterval(auto_2)">감소 정지</button>
+    var auto_3 = setTimeout(function() {
+      addNum++;
+      console.log(addNum);
+    }, 5000);
+
+
+  </script>
+  
 </body>
 </html>
