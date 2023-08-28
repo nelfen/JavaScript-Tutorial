@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>functionQEx1</title>
+</head>
+<body>
+  <script>
+    obj1(); 
+
+    function obj1() { //호이스팅 가능
+      document.write("A");
+    }
+
+    //obj2();
+
+    var obj2 = function() {  //호이스팅 불가능, 재할당 & 클로저 활용 가능
+      document.write("B");
+    }
+
+    obj2();
+  </script>
+</body>
+</html>
