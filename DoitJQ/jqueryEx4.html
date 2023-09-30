@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="JS/jquery-1.12.4.min.js"></script>
+  <title>jqueryEx4</title>
+</head>
+<body>
+  <script>
+    $(function() {
+      $("#menu li").eq(2).css({"background-color":"#ff0"});
+      $("#menu li:lt(2)").css({"background-color":"#0ff"});
+      //lt(2): 2보다 인덱스가 작은 항목 모두 선택
+      $("#menu li:gt(2)").css({"background-color":"#f0f"});
+      //gt(2): 2보다 인덱스가 큰 항목 모두 선택
+    });
+  </script>
+      <ul id="menu">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li>내용4</li>
+        <li>내용5</li>
+      </ul>
+</body>
+</html>
