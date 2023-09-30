@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="JS/jquery-1.12.4.min.js"></script>
+  <title>jqueryEx3</title>
+</head>
+<body>
+  <script>
+    $(function() {
+      $("#menu li:first").css({"background-color":"#ff0"});
+      $("#menu li:last").css({"background-color":"#0ff"});
+      $("#menu li:even").css({"font-weight":"bold"});
+//    $("#menu li:odd").css({"font-weight":"bold"});
+    });
+  </script>
+    <h1>탐색 선택자</h1>
+      <ul id="menu">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li>내용4</li>
+      </ul>
+</body>
+</html>
