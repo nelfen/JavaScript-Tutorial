@@ -9,11 +9,41 @@
   <script>
     var today = new Date();
     var nowMonth = today.getMonth() + 1,
-    nowDate = today.getDate(),
-    nowDay = today.getDay();
+    nowDate = today.getDate();
+
+    // function nowDay() {  //내가 짠 코드
+    //   var Day = today.getDay();
+    //   var DayString = "";
+
+    //   if(Day == 1) {
+    //     DayString = "월";
+    //   } else if(Day == 2) {
+    //     DayString = "화";
+    //   } else if(Day == 3) {
+    //     DayString = "수";
+    //   } else if(Day == 4) {
+    //     DayString = "목";
+    //   } else if(Day == 5) {
+    //     DayString = "금";
+    //   } else if(Day == 6) {
+    //     DayString = "토";
+    //   } else {
+    //     DayString = "일";
+    //   }
+
+    //   return DayString;
+    // }
+
+    function nowDay() { //ai가 짠 코드
+      var Day = today.getDay();
+      var daysOfWeek = ["일", "월", "화", "수", "목", "금", "토"];
+      var DayString = daysOfWeek[Day];
+
+      return DayString;
+    }
 
     document.write("<h1>오늘의 날짜 정보</h1>");
-    document.write("오늘은 " + nowMonth + "월 " + nowDate + "일 " + nowDay + "요일 입니다.<br>");
+    document.write("오늘은 " + nowMonth + "월 " + nowDate + "일 " + nowDay() + "요일 입니다.<br>");
 
     var worldcup = new Date(2002,4,31);
     var theMonth = worldcup.getMonth() + 1,
