@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>booleanEx</title>
-</head>
-<body>
-  <script>
     //예제에서는 var을 쓰지만 const와 let을 사용하게 될 것
     var z="100";  //string
     var x=100;  //number
@@ -25,6 +16,3 @@
     console.log(t, a, b, y, p);
       
     console.log(typeof(z), typeof(x));
-  </script>
-</body>
-</html>
