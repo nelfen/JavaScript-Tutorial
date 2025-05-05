@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head><meta charset="UTF-8"><title>비교 연산자의 동작 차이</title></head><body>
+  <script>
+  /*
+    비교연산자 ==, !=과 ===, !==의 차이
+    ==, !=: 값이 같은지 확인하고 true 반환
+    ===, !==: 자료형이 같은지까지 확인하고 true 반환
+  */
+    let num = 5;
+    let str = "5";
+    let res;
+
+    res = num == str;
+    console.log("num == str:", res);
+
+    res = num === str;
+    console.log("num === str:", res);
+  </script>
+</body>
+</html>
