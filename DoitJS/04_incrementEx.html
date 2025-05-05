@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head><meta charset="UTF-8"><title>증감 연산자</title></head><body>
+  <script>
+  /*
+    b++, ++b의 차이
+    let a = b++;
+    먼저 실행: b의 값을 a에 대입 
+    나중 실행: b의 값을 1만큼 증가
+    let a = ++b;
+    먼저 실행: b의 값을 1만큼 증가
+    나중 실행: 증가된 값을 a에 대입
+  */
+    let num = 10;
+    let result;
+
+    result = num++;
+    console.log("후위 연산 후 result:", result, "num:", num); 
+    
+    result = ++num;
+    console.log("전전위 연산 후 result:", result, "num:", num);
+
+  </script>
+</body>
+</html>
