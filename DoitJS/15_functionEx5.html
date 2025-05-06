@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>functionEx4</title>
+<head><meta charset="UTF-8"><title>FuncEx5: 버튼을 눌러 이미지가 바뀌는 함수</title>
   <style>
     *{margin: 0;padding: 0;}
 	  #galleryZone {text-align: center;}
@@ -12,17 +8,18 @@
 </head>
 <body>
   <script>
-    var num = 1;
+    let num = 1;
     function gallery(direct) {
       if (direct) {
-        if (num == 8) return;
+        if (num == 9) return;
+        //여기서 사용된 return은 값을 반환하라 라는 의미가 아닌 num이 9이면 이 함수에서 더 이상 아무것도 하지 마라 라는 의미로 사용
         num++;
       } else {
         if (num == 1) return;
         num--;
       }
 
-      var imgTag = document.getElementById("photo");
+      let imgTag = document.getElementById("photo");
       imgTag.setAttribute("src", "images/pic_" + num + ".jpg");
 
       console.log(num);
