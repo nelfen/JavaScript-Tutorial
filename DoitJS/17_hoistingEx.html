@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head><meta charset="UTF-8"><title>호이스팅</title></head><body>
+  <script>
+    obj1(); 
+
+    function obj1() { //호이스팅 가능
+      document.write("A");
+    }
+
+    //obj2();
+
+    const obj2 = function() {  //호이스팅 불가능, 재할당 & 클로저 활용 가능
+      document.write("B");
+    }
+
+    obj2();
+  </script>
+</body>
+</html>
