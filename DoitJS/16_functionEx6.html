@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head><meta charset="UTF-8"><title>F	
+  uncEx6: 재귀함수</title>
+</head>
+<body>
+  <script>
+    let num = 0;
+    function testFnc() {
+      num++;
+      document.write(num, "<br>");
+      if (num == 10) return;
+
+      testFnc();  //자신을 호출하여 해당 함수를 반복
+    }
+
+    testFnc();  //최초 트리거
+  </script>
+</body>
+</html>
