@@ -1,40 +1,12 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>objEx2</title>
-</head>
-<body>
+<head><meta charset="UTF-8"><title>objEx1</title></head><body>
   <script>
     var today = new Date();
+    //console.dir(today);
     var nowMonth = today.getMonth() + 1,
     nowDate = today.getDate();
 
-    // function nowDay() {  //내가 짠 코드
-    //   var Day = today.getDay();
-    //   var DayString = "";
-
-    //   if(Day == 1) {
-    //     DayString = "월";
-    //   } else if(Day == 2) {
-    //     DayString = "화";
-    //   } else if(Day == 3) {
-    //     DayString = "수";
-    //   } else if(Day == 4) {
-    //     DayString = "목";
-    //   } else if(Day == 5) {
-    //     DayString = "금";
-    //   } else if(Day == 6) {
-    //     DayString = "토";
-    //   } else {
-    //     DayString = "일";
-    //   }
-
-    //   return DayString;
-    // }
-
-    function nowDay() { //ai가 짠 코드
+    function nowDay() { //GPT가 짠 코드
       var Day = today.getDay();
       var daysOfWeek = ["일", "월", "화", "수", "목", "금", "토"];
       var DayString = daysOfWeek[Day];
