@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head><meta charset="UTF-8"><title>test</title></head><body>
+  <script>
+    // var a4 = Number(prompt("4분기 판매량은 얼마입니까?", 0));
+    // var a1 = 1200;
+    // var a2 = 1300;
+    // var a3 = 1000;
+    // var sum = (a1 + a2 + a3) / 3;
+
+    // var result = a4 > sum ? "평균 이상" : "평균 이하"
+    // document.write(result);
+
+    var a1 = Number(prompt("1분기 판매량은 얼마입니까?", 1300));
+    var a2 = Number(prompt("2분기 판매량은 얼마입니까?", 1200));
+    var a3 = Number(prompt("3분기 판매량은 얼마입니까?", 1000));
+    var a4 = Number(prompt("4분기 판매량은 얼마입니까?", 0)); 
+
+    var pro = [a1, a2, a3, a4];
+    var sum = (pro[0] + pro[1] + pro[2])/(pro.length-1);
+    var result = pro[3] > sum ? "평균 이상" : "평균 이하"
+    document.write(result);
+  </script>
+</body>
+</html>
