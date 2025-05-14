@@ -2,7 +2,6 @@
 <head><meta charset="UTF-8"><title>논리 연산자</title></head><body>
   <script>
   /*
-    논리 연산자
     ||: or 연산자, 둘 중 하나라도 true면 true 반환
     &&: and 연산자, 둘 중 하나라도 false가 존재하면 false 반환
     !: not 연산자, 결과값이 true이면 false 반환
@@ -14,6 +13,12 @@
     console.log(p||q);  //true
     console.log(p&&q);  //false
     console.log(!p, !q);  //false, true
+
+    let a = 10;
+    let b = 3;
+    
+    let result = a > b ? "yes" : "no";  //? 앞에 식이 true일 경우 앞의 값 반환, false일 경우 뒤의 값 반환
+    console.log(result);
   </script>
 </body>
 </html>
