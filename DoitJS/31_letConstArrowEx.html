@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head><meta charset="UTF-8"><title>팝업만들어 띄워보기</title></head><body>
+  <script>
+  // var vs let
+  if (true) {
+    var x = 10;
+    let y = 20;
+  }
+  console.log("var x:", x);   // 10
+  // console.log("let y:", y); // 에러
+
+  // const의 특성
+  const num = 5;
+  // num = 10; // 에러
+  const arr = [1, 2, 3];
+  arr.push(4); // 가능
+
+  // 화살표 함수 vs 일반 함수
+  const obj = {
+    value: 42,
+    regularFunc: function () {
+      return this.value;
+    },
+    arrowFunc: () => {
+      return this.value;
+    }
+  };
+
+  document.write("regularFunc(): " + obj.regularFunc() + "<br/>");
+  document.write("arrowFunc(): " + obj.arrowFunc() + "<br/>");
+  </script>
+</body>
+</html>
