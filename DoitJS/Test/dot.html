@@ -1,0 +1,105 @@
+<style>
+.todolist {
+  width: 190px;
+  padding: 0;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+/* 선택 버튼 영역 */
+.toggle-buttons {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.toggle-button {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.toggle-button.selected {
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #007bff;
+  color: #007bff;
+}
+
+/* 할 일 리스트 */
+.todo-list {
+  padding: 15px 20px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 6px 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.todo-text {
+  font-size: 15px;
+  color: #444;
+  flex: 1;
+}
+
+.done .checkbox {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.done .todo-text {
+  text-decoration: line-through;
+  color: #aaa;
+}
+</style>
+
+<div class="todolist">
+  <!-- 상단 토글 버튼 -->
+  <div class="toggle-buttons">
+    <div class="toggle-button selected">데드라인</div>
+    <div class="toggle-button">이벤트</div>
+  </div>
+
+  <!-- 할 일 목록 -->
+  <div class="todo-list">
+    <div class="todo-item">
+      <div class="checkbox"></div>
+      <div class="todo-text">기간제 긍혼 쓰기</div>
+    </div>
+    <div class="todo-item done">
+      <div class="checkbox"></div>
+      <div class="todo-text">이벤트 보상 수령</div>
+    </div>
+    <div class="todo-item">
+      <div class="checkbox"></div>
+      <div class="todo-text">챌섭 월드 리프</div>
+    </div>
+    <div class="todo-item done">
+      <div class="checkbox"></div>
+      <div class="todo-text">메M 170렙 달성</div>
+    </div>
+        <div class="todo-item done">
+      <div class="checkbox"></div>
+      <div class="todo-text">샤타때 무기 22성</div>
+    </div>
+  </div>
+</div>
