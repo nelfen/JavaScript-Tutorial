@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head><meta charset="UTF-8"><title>switch/Case</title></head><body>
   <script>
-    var game = prompt("가위, 바위, 보 중 선택하세요", "가위");
-    var gameNum;
+    let game = prompt("가위, 바위, 보 중 선택하세요", "가위");
+    let gameNum;
     switch(game) {
       case "가위":
         gameNum = 1; break;
@@ -13,7 +13,7 @@
       default: alert("잘못 작성했습니다.");
         location.reload();  
     }
-    var com = Math.ceil(Math.random()*3);
+    let com = Math.ceil(Math.random()*3);
     console.log(com);
 
     document.write("<img src=\"images/math_img_" + com + ".jpg\"><br>");
