@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <head><meta charset="UTF-8"><title>다양한 ArrayList 방식</title></head><body>
   <script>
-    var a = new Array();
+    let a = new Array();
     a[0] = "male";
     a[1] = 23;
     a[2] = true;
-    var b = new Array("male", 23, true);
-    var c = ["male", 23, true];
+    let b = new Array("male", 23, true);
+    let c = ["male", 23, true];
 
     document.write("<h3>배열값 가져오기 -1</h3>");
     document.write(a[0], "<br>");
@@ -14,7 +14,7 @@
     document.write(a[2], "<br>");
 
     document.write("<h3>배열값 가져오기 -2</h3>");
-    for(var i=0; i < b.length; i++) {
+    for(let i=0; i < b.length; i++) {
       document.write(b[i], "<br>");
     } 
 
