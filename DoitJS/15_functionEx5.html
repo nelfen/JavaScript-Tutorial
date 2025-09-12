@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <head><meta charset="UTF-8"><title>FuncEx5: 버튼을 눌러 이미지가 바뀌는 함수</title>
 <style>
-  *{margin: 0;padding: 0;}
+  *{margin: 0;padding: 0;box-sizing: border-box;}
   #galleryZone {text-align: center;}
-  #galleryZone input[type="image"]{margin:08px;}
 </style>
 </head>
 <body>
@@ -21,8 +20,6 @@
 
       let imgTag = document.getElementById("photo");
       imgTag.setAttribute("src", "images/pic_" + num + ".jpg");
-
-      console.log(num);
     }
   </script>
   <div id="galleryZone">
