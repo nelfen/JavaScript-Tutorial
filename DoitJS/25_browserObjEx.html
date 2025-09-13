@@ -8,21 +8,21 @@
     //prompt("A", "B") = 사용자에게 변수를 입력받을 질문창
     //confirm("A") = 확인/취소 버튼창
       
-    var addNum = 0;
-    var subNum = 1000;
+    let addNum = 0;
+    let subNum = 1000;
 
      //setInterval = 연속성, setTimeout = 단발성
-    var auto_1 = setInterval(function() {
+    const auto_1 = setInterval(function() {
       addNum++;
       console.log("addNum: " + addNum);
     }, 3000);
 
-    var auto_2 = setInterval(function() {
+    const auto_2 = setInterval(function() {
       subNum--;
       console.log("subNum: " + subNum);
     }, 3000);
 
-    var auto_3 = setTimeout(function() {
+    const auto_3 = setTimeout(function() {
       addNum++;
       console.log(addNum);
     }, 5000);
