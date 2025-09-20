@@ -10,6 +10,7 @@
     
     let today = new Date();
     console.log(today);
+    console.dir(today);
     let nowMonth = today.getMonth() + 1,  //month는 0부터 시작하기에 + 1을 해줘야함 왜인지는 잘 모름
     nowDate = today.getDate();
 
@@ -28,7 +29,7 @@
     document.write("월드컵은 " + theMonth + "월 " + theDate + "일 " + getDayString(worldcup.getDay()) + "요일 입니다.<br>");
 
 
-    //D-Day 계산
+    //오늘로부터 D-Day 계산
     let todays = new Date();
     let nowYear = todays.getFullYear();
 
