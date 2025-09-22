@@ -9,7 +9,7 @@
       this.maxWeight;
     }
     CheckWeight.prototype.getInfo = function() {
-      var str = ""
+      let str = ""
         str += "이름: " + this.userName + ", ";
         str += "키: " + this.userHeight + ", ";
         str += "몸무게: " + this.userWeight + "<br>";
@@ -28,8 +28,8 @@
         }
     }
 
-    var jang = new CheckWeight("장보리", 168, 62);
-    var park = new CheckWeight("박달재", 180, 88);
+    let jang = new CheckWeight("장보리", 168, 62);
+    let park = new CheckWeight("박달재", 180, 88);
     console.log(jang);
     console.log(park);
 
